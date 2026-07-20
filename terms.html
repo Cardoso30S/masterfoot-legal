@@ -13,6 +13,11 @@
     :root{ --bg:#0f1512; --card:#161d19; --text:#e8efea; --muted:#9db0a6;
       --accent:#33c26a; --border:#26302b; }
   }
+  .logo img {
+  max-width: 30px;  /* Ajuste a largura máxima como preferir */
+  height: auto;     /* Mantém a proporção correta */
+  display: block;
+}
   *{box-sizing:border-box}
   body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     background:var(--bg);color:var(--text);line-height:1.65}
@@ -36,7 +41,10 @@
 <div class="wrap">
   <a class="back" href="index.html">← Documentos</a>
   <div class="top">
-    <div class="logo">⚽</div><strong>MasterFoot</strong>
+    <div class="logo">
+      <img src="logo.png" alt="Logo MasterFoot">
+    </div>
+    <strong>MasterFoot</strong>
   </div>
 
   <h1>Termos de Uso</h1>
